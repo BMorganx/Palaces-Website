@@ -1,0 +1,59 @@
+.navigation_bar {
+  font-family: Rock Salt;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  line-height: 0px;
+  position: absolute;
+  top: 0%;
+  left: 43.5%;
+  width: 70%;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 1%;
+  max-height: 8%;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 5px solid rgb(0, 0, 0);
+  margin: 1em 0;
+  padding: 0;
+  min-width: 40%;
+  max-width: 40%;
+  position: absolute;
+  left: 56%;
+  top: 0%;
+  line-height: 50px;
+}
+hr2 {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 5px solid rgb(0, 0, 0);
+  margin: 1em 0;
+  padding: 0;
+  min-width: 40%;
+  max-width: 40%;
+  position: absolute;
+  left: 56%;
+  top: 4.1%;
+  line-height: 50px;
+}
+.line-height-li {
+    line-height: -10px;
+}
