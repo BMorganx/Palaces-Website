@@ -4,7 +4,7 @@ Page Flow Styles
 .websiteBody {
   margin: 0;
 }
-.about-Page {
+.catering-Page {
   display: block;
   margin: auto;
   width: 100%;
@@ -15,7 +15,7 @@ Page Flow Styles
   pointer-events: none;
   z-index: 1;
 }
-.about-frame {
+.catering-frame {
   position: relative;
   z-index: 2;
   pointer-events: none;
@@ -35,7 +35,7 @@ Page Flow Styles
 /*
 About Banner
 */
-.about-banner-frame {
+.catering-banner-frame {
   position: relative;
   z-index: 3;
   pointer-events: none;
@@ -46,19 +46,19 @@ About Banner
   margin-top: -50px;
   margin-bottom: 0px;
   min-height: 275px;
-  background-image: url(../assets/About-Banner.png);
+  background-image: url(../assets/Cater-Banner.jpg);
   background-position: center;
   background-size: cover;
-  opacity: 0.3;
+  opacity: 0.5;
 }
-.about-banner-frame-outer {
+.catering-banner-frame-outer {
   pointer-events: none;
   z-index: 3;
   position: relative;
   display: flex;
 }
 
-.about {
+.catering {
   position: relative;
   z-index: 4;
   pointer-events: none;
@@ -76,17 +76,18 @@ About Banner
 
 
 }
-.about-outer {
+.catering-outer {
   pointer-events: none;
   z-index: 4;
   position: relative;
   display: flex;
+  padding-bottom: 50px;
 }
 
 /*
 About Us Header/Sub-Header
 */
-.about-header {
+.catering-header {
   position: relative;
   margin-left: 0%;
   margin-top: -250px;
@@ -96,7 +97,7 @@ About Us Header/Sub-Header
   line-height: 10px;
   text-align: center;
 }
-.about-header-title{
+.catering-header-title{
   font-size: 42px;
   line-height: 100px;
   font-family: Rock Salt;
@@ -105,7 +106,7 @@ About Us Header/Sub-Header
   text-decoration-thickness: 4px;
   text-align: center;
 }
-.about-sub-header{
+.catering-sub-header{
   position: relative;
   margin-left: 0%;
   margin-top: 40px;
@@ -115,21 +116,22 @@ About Us Header/Sub-Header
   line-height: 10px;
   text-align: center;
 }
-.about-sub-header-title{
+.catering-sub-header-title{
   font-size: 32px;
   line-height: 100px;
   font-family: Rock Salt;
+  font-weight: bold;
   text-align: center;
 }
-.about-line{
+.catering-line{
   position: relative;
   z-index: 22;
-  margin-left: 43%;
-  width: 12%;
-  margin-top: 20px;
+  margin-left: 0%;
+  width: 100%;
+  margin-top: 0px;
   min-height: 2px;
   max-height: 2px;
-  border: 2px solid rgba(0, 0, 0, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
 }
 
 /*
@@ -138,89 +140,70 @@ Content body styles
 .parent-container {
   padding: 0px;
 }
-.content-title{
+.catering-content-title{
   font-size: 26px;
   line-height: 100px;
   font-family: Rock Salt;
+  font-weight: bold;
   text-align: center;
   text-decoration: underline;
   text-decoration-thickness: 3px;
 }
-.span-about {
+.span-catering-left {
   color: rgba(0, 0, 0, 1);
   font-style: normal;
   font-family: Rock Salt;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 20px;
   line-height: 32px;
   text-align: center;
 }
-.about-left-child {
-  position: relative;
-  margin-left: 10%;
-  width:30%;
-  float: left;
+.span-catering {
+  color: rgba(0, 0, 0, 1);
+  font-style: normal;
+  font-family: Rock Salt;
+  font-size: 20px;
   line-height: 32px;
   text-align: center;
 }
-.about-right-child {
+.catering-left-child {
   position: relative;
   margin-left: 20%;
-  width: 30%;
-  float: left;
-  line-height: 32px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-
-/*
-Location map Style
-*/
-.location-map {
-  position: relative;
-  margin-left:0%;
-  margin-top: -175px;
-  width:100%;
+  width:40%;
   float: left;
   line-height: 32px;
   text-align: left;
 }
-.location-img{
-  position:relative;
-  z-index:13;
-  margin-left:13%;
-  width:30%;
-  min-width:343px;
-  height:195px;
-  margin-top:0px;
-  margin-bottom:0px;
-  min-height:195px;
-  content: url(../assets/Location-Image.png);
+.catering-right-child {
+  position: relative;
+  margin-left: -10%;
+  width: 30%;
+  float: left;
+  line-height: 32px;
+  text-align: right;
 }
-.location-img-outer{
-  z-index:13;
-  position:relative;
-  display:flex;
+.catering-msg{
+  font-size: 20px;
+  line-height: 50px;
+  font-family: Rock Salt;
+  font-weight: bold;
+  text-align: center;
 }
-.google-map-code{
-  position:relative;
-  pointer-events:all;
-  z-index:13;
-  margin-left:13%;
-  width:25%;
-  min-width:343px;
-  height:300px;
-  margin-top:0px;
-  margin-bottom:0px;
-  min-height:195px;
-  overflow:hidden;
-  padding-bottom:40%;
-  height:0;
+.catering-msg-outer{
+  margin-top: 50px;
+  margin-left: 25%;
+  padding-bottom: 50px;
+  width: 50%;
+  text-align: center;
 }
-.google-map-code iframe{
-  left:0;
-  top:0;
-  height:65%;
-  width:100%;
-  position:absolute;
+.sm-lg-title{
+  position: relative;
+  margin-left: 51%;
+  width: 30%;
+  float: left;
+  line-height: 32px;
+  text-align: right;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }

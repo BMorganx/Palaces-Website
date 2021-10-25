@@ -1,75 +1,127 @@
-.home_pg_banner {
-  position: absolute;
-  object-fit: cover;
+/*
+Page Flow Styles
+*/
+.websiteBody {
+  margin: 0;
+}
+.Page {
+  display: block;
+  margin: auto;
   width: 100%;
-  height: 35%;
-  top: 8%;
+  height: auto;
+  pointer-events: auto;
 }
-
-.home_page {
-  position: absolute;
+.Page-outer {
+  pointer-events: none;
+  z-index: 1;
+}
+.home-frame {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
   width: 100%;
-  height: 15%;
-  left: 20%;
-  top: 55%;
+  margin-left: 0;
+  height: auto;
+  min-width: 200px;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
-
-.palaces_logo {
-  font-family: Rock Salt;
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 80.4px;
-  position: absolute;
-  top: 45%;
-  left: 5%;
+.Frame-outer {
+  pointer-events: none;
+  z-index: 2;
 }
-
-body {
-  min-height: 100px;
-  margin-bottom: 100px;
-  clear: both;
-}
-
-h1 {
-  font-family: Rock Salt;
-  font-size: 2.3rem;
+.span-home {
+  color: rgba(0, 0, 0, 1);
   font-style: normal;
-  font-variant: normal;
-  font-weight: 1000;
-  line-height: 50.4px;
-  position: absolute;
-  top: -30%;
-  left: 1%;
-}
-h3 {
   font-family: Rock Salt;
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 15.4px;
-}
-p {
-  font-family: Rock Salt;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 40px;
-}
-blockquote {
-  font-family: Rock Salt;
-  font-size: 21px;
-  font-style: normal;
-  font-variant: normal;
   font-weight: 400;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 42px;
+  text-align: left;
 }
-pre {
-  font-family: Rock Salt;
-  font-size: 13px;
+.parent-container {
+  padding: 0px;
+}
+.home-left-child {
+  position: relative;
+  margin-left: 5%;
+  width: 30%;
+  float: left;
+  line-height: 10px;
+}
+.home-right-child {
+  position: relative;
+  margin-left: 10%;
+  margin-top: 30px;
+  width: 50%;
+  float: left;
+}
+.home-title {
+  text-align: left;
+  font-size: 50px;
+  line-height: 100px;
+}
+.body-title {
+  text-align: left;
+  font-size: 30px;
+  line-height: 90px;
+}
+.home-header {
+  color: rgba(0, 0, 0, 1);
   font-style: normal;
-  font-variant: normal;
+  font-family: Rock Salt;
   font-weight: 400;
-  line-height: 18.5667px;
+  font-size: 12px;
+  line-height: 32px;
+}
+
+/*
+Home Banner
+*/
+
+.home-banner-frame {
+  position: relative;
+  z-index: 3;
+  pointer-events: none;
+  margin-left: 0px;
+  width: 100%;
+  min-width: 831px;
+  height: 400px;
+  margin-top: -50px;
+  margin-bottom: 0px;
+  min-height: 275px;
+  background-image: url(../assets/Home-Banner.png);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+.home-banner-frame-outer {
+  pointer-events: none;
+  z-index: 3;
+  position: relative;
+  display: flex;
+}
+
+.home {
+  position: relative;
+  z-index: 4;
+  pointer-events: none;
+  margin-left: 0%;
+  width: 100%;
+  min-width: 372px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 54px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-style: normal;
+}
+.home-outer {
+  pointer-events: none;
+  z-index: 4;
+  position: relative;
+  display: flex;
 }
