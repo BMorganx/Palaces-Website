@@ -1,15 +1,18 @@
 .navigation_bar {
+  z-index: 100;
   font-family: Rock Salt;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: black;
-  line-height: 0px;
-  position: absolute;
-  top: 0%;
-  left: 43.5%;
-  width: 70%;
+  position: relative;
+  margin-left: 0%;
+  width: 100%;
+  overflow: visible;
+  height: auto;
 }
-
+.nav-container {
+  width: 50%;
+}
 .nav-link {
   color: black;
 }
@@ -18,12 +21,19 @@
   color: red;
 }
 
+.nav-bar {
+  display: inline-block;
+  margin: 0;
+}
+
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
-  min-height: 1%;
-  max-height: 8%;
+  text-align: center;
+  line-height: 10px;
+  min-height: 3%;
+  max-height: 10%;
 }
 
 hr {
@@ -40,20 +50,26 @@ hr {
   top: 0%;
   line-height: 50px;
 }
-hr2 {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 5px solid rgb(0, 0, 0);
-  margin: 1em 0;
-  padding: 0;
-  min-width: 40%;
-  max-width: 40%;
-  position: absolute;
-  left: 56%;
-  top: 4.1%;
-  line-height: 50px;
+li {
+  display: inline-block;
+  margin: 0;
 }
-.line-height-li {
-    line-height: -10px;
+.Line-nav {
+  position: relative;
+  z-index: 22;
+  pointer-events: none;
+  margin-left: 5%;
+  max-width: 675px;
+  width: 100%;
+  min-width: 100px;
+  margin-top: -20px;
+  min-height: 2px;
+  max-height: 2px;
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+.Line-nav-outer {
+  pointer-events: none;
+  z-index: 22;
+  position: relative;
+  display: flex;
 }
