@@ -1,8 +1,25 @@
 import React from "react";
 import "./Navigation.css";
 import "./Cart.css";
+import {useState, useEffect} from "react";
+import Axios from "axios";
 
 function Cart() {
+
+  /*const [menuName, setMenuName] = useState("");
+                  const [price, setPrice] = useState(0);
+                  const [quantity, setQuantity] = useState(0);*/
+                  const [menuList, setMenuList] = useState([]);
+
+                  useEffect(() => {
+                    getDish();
+                  }, []);
+
+                  const getDish = async () => {
+                    const response = await Axios.get("http://localhost:3001/dish");
+                      setMenuList(response.data);
+                  };
+
   return (
     <html lang="en">
       <head>
@@ -82,12 +99,32 @@ function Cart() {
                         </span>
                       </div>
                     </div>
+                    <table className="table">
+                          <tr>
+                            <th>Remove</th>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                          </tr>
+                    {menuList.map((val, key) => {
 
+                      return (
+                        
+                          <tr key= {val.cart_id}>
+                            <th>X</th>
+                            <th>{val.dish_name}</th>
+                            <th>{val.price}</th>
+                            <th><input type="number" id="quantity" value="1"></input></th>
+                          </tr>
+                        
+                      );
+                      })}
+                    </table>
                     <div class="checkout-button-outer">
                       <div class="checkout-button">Checkout</div>
                     </div>
                   </div>
-                </div>
+                </div> 
               </div>
             </div>
           </div>

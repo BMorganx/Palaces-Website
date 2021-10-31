@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+import Axios from "axios";
 import "./Navigation.css";
 import "./Order.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -14,7 +16,313 @@ import SwiperCore, {
 SwiperCore.use([Autoplay, Pagination, EffectCoverflow]);
 
 function Order() {
+
+  const [menuName, setMenuName] = useState("");
+  const [price, setPrice] = useState(0);
+  const [quantity, setQuantity] = useState(0);
+  const [menuList, setMenuList] = useState([]);
+
+  const displayInfo = () => {
+    console.log(menuName + ' ' + price);
+  }
+
+  const addCream = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Cream Cheese Wontons",
+      price: 4.95,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Cream Cheese Wontons",
+          price: 4.95,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addChicken = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Chicken Wings",
+      price: 8.00,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Chicken Wings",
+          price: 8.00,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addPadPakCurry = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Pad Pak Curry",
+      price: 11.50,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Pad Pak Curry",
+          price: 11.50,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addPadPed = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Pad Ped",
+      price: 11.50,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Pad Ped",
+          price: 11.50,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addSeaFoodComb = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Seafood Combination",
+      price: 14.00,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Seafood Combination",
+          price: 14.00,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addKingMussel = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "King Mussel",
+      price: 14.00,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "King Mussel",
+          price: 14.00,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addRoyalGingerJumbo = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Royal Ginger Jumbo Shrimp",
+      price: 13.95,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Royal Ginger Jumbo Shrimp",
+          price: 13.95,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addCrispyJumbo = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Crispy Jumbo Shrimp",
+      price: 13.95,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Crispy Jumbo Shrimp",
+          price: 13.95,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addPrincess = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Princess Jumbo Shrimp",
+      price: 13.95,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Princess Jumbo Shrimp",
+          price: 13.95,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addKowPad = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Kow Pad",
+      price: 10.50,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Kow Pad",
+          price: 10.50,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addKowPadPrik = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Kow Pad Prik",
+      price: 10.50,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Kow Pad Prik",
+          price: 10.50,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addPadThai = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Pad Thai",
+      price: 10.75,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Pad Thai",
+          price: 10.75,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addPadSeeEw = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Pad See-Ew",
+      price: 10.75,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Pad See-Ew",
+          price: 10.75,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addPadPrik = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Pad Prik",
+      price: 10.15,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Pad Prik",
+          price: 10.15,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addPadPak = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Pad Pak",
+      price: 10.15,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Pad Pak",
+          price: 10.15,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addPadNormai = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Pad Normai",
+      price: 10.15,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Pad Normai",
+          price: 10.15,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addPadCashew = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Pad Cashew Nut",
+      price: 10.15,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Pad Cashew Nut",
+          price: 10.15,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  /*onChangeHandler(event) {
+    this.props.eventHandler(event);
+  }
+  
+  var dish = this.props.menu_item;*/
+
   return (
+    
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
@@ -204,14 +512,15 @@ function Order() {
                               <div class="dish-order">
                                 Cream Cheese Wontons - $4.95
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>
+                                <button class="order-button" onClick={addCream}><span>Add to Order</span> </button>
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
-                                Cream Cheese Wontons - $4.95
+                                Chicken Wings - $8
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={addChicken}><span>Add to Order</span> </button>
+                              </div>
                             </div>
                           </div>
 
@@ -229,14 +538,14 @@ function Order() {
                               <div class="dish-order">
                                 Pad Pak Curry (Regular) - $11.50
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={addPadPakCurry}><span>Add to Order</span> </button>                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
-                                Cream Cheese Wontons - $4.95
+                                Pad Ped - $11.50
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={addPadPed}><span>Add to Order</span> </button>                              </div>
                             </div>
                           </div> 
 
@@ -254,33 +563,33 @@ function Order() {
                               <div class="dish-order">
                                 Seafood Combination - $14.00
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={addSeaFoodComb}><span>Add to Order</span> </button>                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 King Mussel - $14.00
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={addKingMussel}><span>Add to Order</span> </button>                              </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                                 Royal Ginger Jumbo Shrimp - $13.95
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={addRoyalGingerJumbo}><span>Add to Order</span> </button>                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 Crispy Jumbo Shrimp - $13.95
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={addCrispyJumbo}><span>Add to Order</span> </button>                              </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                                 Princess Jumbo Shrimp - $13.95
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={addPrincess}><span>Add to Order</span> </button>                                <br />
                               </div>
                             </div>
                           </div> 
@@ -299,53 +608,53 @@ function Order() {
                               <div class="dish-order">
                                 Kow Pad - $10.50
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={addKowPad}><span>Add to Order</span> </button>                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                               Kow Pad Prik - $10.50
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={addKowPadPrik}><span>Add to Order</span> </button>                              </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                                 Pad Thai - $10.75
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={addPadThai}><span>Add to Order</span> </button>                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 Pad See-Ew - $10.75
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={addPadSeeEw}><span>Add to Order</span> </button>                              </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                                 Pad Prik - $10.15
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={addPadPrik}><span>Add to Order</span> </button>                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 Pad Pak - $10.15
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={addPadPak}><span>Add to Order</span> </button>                              </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                                 Pad Normai - $10.15
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={addPadNormai}><span>Add to Order</span> </button>                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 Pad Cashew Nut - $10.15
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={addPadCashew}><span>Add to Order</span> </button>                              </div>
                             </div>
                           </div> 
 

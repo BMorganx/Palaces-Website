@@ -1,0 +1,27 @@
+update database first.
+
+front-end:
+
+to install front-end: npm install
+
+only one time: npm install axios
+
+to run: npm start
+
+back end:
+
+run mysql first
+
+move directory to server folder: cd server
+
+to install back-end: npm install
+
+only one time: npm install cors express mysql nodemon
+
+to run server for nodemon: nodemon Palaces-Website
+
+to run server once: node index.js
+
+tools:
+
+control button and c button = terminate process
