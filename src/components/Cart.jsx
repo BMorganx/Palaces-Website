@@ -7,18 +7,29 @@ import Axios from "axios";
 function Cart() {
 
   /*const [menuName, setMenuName] = useState("");
-                  const [price, setPrice] = useState(0);
-                  const [quantity, setQuantity] = useState(0);*/
-                  const [menuList, setMenuList] = useState([]);
+    const [price, setPrice] = useState(0);
+    const [quantity, setQuantity] = useState(0);
+    const [cart_id, setCartId] = useState(0);*/
+    const [menuList, setMenuList] = useState([]);
 
-                  useEffect(() => {
-                    getDish();
-                  }, []);
+    useEffect(() => {
+      getDish();
+        }, []);
 
-                  const getDish = async () => {
-                    const response = await Axios.get("http://localhost:3001/dish");
-                      setMenuList(response.data);
-                  };
+    const getDish = async () => {
+    const response = await Axios.get("http://localhost:3001/dish");
+      setMenuList(response.data);
+    };
+
+    const deleteDish = (cart_id) => {
+      Axios.delete(`http://localhost:3001/delete/${cart_id}`).then((response) => {
+        setMenuList(
+          menuList.filter((val) => {
+            return val.cart_id != cart_id;
+          })
+        );
+      });
+    };
 
   return (
     <html lang="en">
@@ -46,6 +57,7 @@ function Cart() {
 
         <script src="index.js"></script>
       </head>
+      
       <body class="websiteBody">
         <div class="cart-Page-outer">
           <div id="cart-Page" data-name="cart-Page" class="cart-Page">
@@ -68,7 +80,7 @@ function Cart() {
                     </div>
                 
 
-                <div class="cart-body-Outer">
+                {/*<div class="cart-body-Outer">
                   <div id="cart-body" data-name="cart-body" class="cart-body">
                     <div class="parent-container">
                       <div class="cart-left-child">
@@ -99,7 +111,17 @@ function Cart() {
                         </span>
                       </div>
                     </div>
-                    <table className="table">
+
+                    
+                    
+                    <div class="checkout-button-outer">
+                      <div class="checkout-button">Checkout</div>
+                    </div>
+
+                        
+                  </div>
+                </div>*/}
+                <table className="table">
                           <tr>
                             <th>Remove</th>
                             <th>Item</th>
@@ -110,21 +132,20 @@ function Cart() {
 
                       return (
                         
-                          <tr key= {val.cart_id}>
-                            <th>X</th>
+                          <tr>
+                            <th><button class="button2" onClick={() => {deleteDish(val.cart_id);}} >Delete</button></th>
                             <th>{val.dish_name}</th>
-                            <th>{val.price}</th>
-                            <th><input type="number" id="quantity" value="1"></input></th>
+                            <th>${val.price.toFixed(2)}</th>
+                            <th><input type="number" id="quantity" min="1" defaultValue={val.quantity}></input></th>
                           </tr>
                         
                       );
                       })}
                     </table>
+
                     <div class="checkout-button-outer">
                       <div class="checkout-button">Checkout</div>
                     </div>
-                  </div>
-                </div> 
               </div>
             </div>
           </div>

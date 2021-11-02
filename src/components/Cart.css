@@ -210,3 +210,9 @@ Content
   position:relative;
   display:flex;
 }
+.button2:hover {
+  background-color: green;
+}
+th {
+  font-family: Rock Salt;
+}

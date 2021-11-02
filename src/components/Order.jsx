@@ -17,6 +17,7 @@ SwiperCore.use([Autoplay, Pagination, EffectCoverflow]);
 
 function Order() {
 
+  const [cart_id, setCartId] = useState(0);
   const [menuName, setMenuName] = useState("");
   const [price, setPrice] = useState(0);
   const [quantity, setQuantity] = useState(0);
@@ -27,6 +28,7 @@ function Order() {
   }
 
   const addCream = () => {
+
     Axios.post("http://localhost:3001/create", {
       menuName: "Cream Cheese Wontons",
       price: 4.95,
@@ -315,6 +317,296 @@ function Order() {
     });
   };
 
+  const addSpecialPho = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Palace's Special Pho",
+      price: 11.00,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Palace's Special Pho",
+          price: 11.00,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addSeafoodPho = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Seafood Pho",
+      price: 13.00,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Seafood Pho",
+          price: 13.00,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addRegularPho = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Regular Pho",
+      price: 10.00,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Regular Pho",
+          price: 10.00,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addHouseSpecialSoupWithNoodles = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "House Special Soup (With Noodles)",
+      price: 11.00,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "House Special Soup (With Noodles)",
+          price: 11.00,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addHouseSpecialSoupNoNoodles = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "House Special Soup (No Noodles)",
+      price: 10.00,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "House Special Soup (No Noodles)",
+          price: 10.00,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addPapayaSalad = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Papaya Salad (Thai Style)",
+      price: 8.99,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Papaya Salad (Thai Style)",
+          price: 8.99,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addCucumberPapayaSalad = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Cucumber Papaya Salad",
+      price: 8.99,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Cucumber Papaya Salad",
+          price: 8.99,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addSeafoodPapayaSalad = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Seafood Papaya Salad",
+      price: 10.99,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Seafood Papaya Salad",
+          price: 10.99,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addBeefLaab = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Beef Laab",
+      price: 14.99,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Beef Laab",
+          price: 14.99,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addBeefRawLaab = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Beef Raw Laab",
+      price: 14.99,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Beef Raw Laab",
+          price: 14.99,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addSeafoodLaab = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Seafood Laab",
+      price: 15.99,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Seafood Laab",
+          price: 15.99,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addSesameChicken = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Sesame Chicken",
+      price: 10.15,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Sesame Chicken",
+          price: 10.15,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addPadBokChoy = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Pad Bok Choy",
+      price: 10.15,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Pad Bok Choy",
+          price: 10.15,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addWhiteRice = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "White Rice",
+      price: 5.00,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "White Rice",
+          price: 5.00,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addStickyRice = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Sticky Rice",
+      price: 5.00,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Sticky Rice",
+          price: 5.00,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addSausage = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Sausage Served With Sticky Rice",
+      price: 8.00,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Sausage Served With Sticky Rice",
+          price: 8.00,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+  const addPorkBelly = () => {
+    Axios.post("http://localhost:3001/create", {
+      menuName: "Pork Belly Served With Sticky Rice",
+      price: 10.00,
+      quantity: 1,
+    }).then(() => {
+      setMenuList([
+        ...menuList,
+        {
+          menuName: "Pork Belly Served With Sticky Rice",
+          price: 10.00,
+          quantiy: 1,
+        },
+      ]);
+    });
+  };
+
+
   /*onChangeHandler(event) {
     this.props.eventHandler(event);
   }
@@ -389,36 +681,42 @@ function Order() {
                               }
                               alt=""
                             />
+                            <h1>Papaya Salad</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Pad-Thai.png").default}
                               alt=""
                             />
+                            <h1>Pad Thai</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Pad-See-Ew.png").default}
                               alt=""
                             />
+                            <h1>Pad See-Ew</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Pad-Prik.png").default}
                               alt=""
                             />
+                            <h1>Pad-Prik</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Bok-Choy.png").default}
                               alt=""
                             />
+                            <h1>Pad Bok Choy</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Laab.png").default}
                               alt=""
                             />
+                            <h1>Beef Lab</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
@@ -427,12 +725,14 @@ function Order() {
                               }
                               alt=""
                             />
+                            <h1>Chicken Wings</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/King-Mussel.png").default}
                               alt=""
                             />
+                            <h1>King Mussel</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
@@ -442,12 +742,14 @@ function Order() {
                               }
                               alt=""
                             />
+                            <h2>Princess Jumbo Shrimp</h2>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Pad-Pak.png").default}
                               alt=""
                             />
+                            <h1>Pad Pak Curry</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
@@ -456,12 +758,14 @@ function Order() {
                               }
                               alt=""
                             />
+                            <h1>Sesame Chicken</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Kow-Pad.png").default}
                               alt=""
                             />
+                            <h1>Kow Pad</h1>
                           </SwiperSlide>
                         </div>
                       </Swiper>
@@ -512,14 +816,14 @@ function Order() {
                               <div class="dish-order">
                                 Cream Cheese Wontons - $4.95
                                 <br />
-                                <button class="order-button" onClick={addCream}><span>Add to Order</span> </button>
+                                <button class="order-button" onClick={() => {window.confirm("Cream Cheese Wontons Added to Cart."); addCream();}}><span>Add to Order</span> </button>
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 Chicken Wings - $8
                                 <br />
-                                <button class="order-button" onClick={addChicken}><span>Add to Order</span> </button>
+                                <button class="order-button" onClick={() => {window.confirm("Chicken Wings Added to Cart."); addChicken();}}><span>Add to Order</span> </button>
                               </div>
                             </div>
                           </div>
@@ -538,14 +842,15 @@ function Order() {
                               <div class="dish-order">
                                 Pad Pak Curry (Regular) - $11.50
                                 <br />
-                                <button class="order-button" onClick={addPadPakCurry}><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Pad Pak Curry Added to Cart."); addPadPakCurry();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 Pad Ped - $11.50
                                 <br />
-                                <button class="order-button" onClick={addPadPed}><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Pad Ped Added to Cart."); addPadPed();}}><span>Add to Order</span> </button>                              </div>
                             </div>
                           </div> 
 
@@ -563,33 +868,37 @@ function Order() {
                               <div class="dish-order">
                                 Seafood Combination - $14.00
                                 <br />
-                                <button class="order-button" onClick={addSeaFoodComb}><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Seafood Combination Added to Cart."); addSeaFoodComb();}}><span>Add to Order</span> </button>                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 King Mussel - $14.00
                                 <br />
-                                <button class="order-button" onClick={addKingMussel}><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("King Mussel Added to Cart."); addKingMussel();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                                 Royal Ginger Jumbo Shrimp - $13.95
                                 <br />
-                                <button class="order-button" onClick={addRoyalGingerJumbo}><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Royal Ginger Jumbo Shrimp Added to Cart."); addRoyalGingerJumbo();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 Crispy Jumbo Shrimp - $13.95
                                 <br />
-                                <button class="order-button" onClick={addCrispyJumbo}><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Crispy Jumbo Shrimp Added to Cart."); addCrispyJumbo();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                                 Princess Jumbo Shrimp - $13.95
                                 <br />
-                                <button class="order-button" onClick={addPrincess}><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Princess Jumbo Shrimp Added to Cart."); addPrincess();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                           </div> 
@@ -608,53 +917,61 @@ function Order() {
                               <div class="dish-order">
                                 Kow Pad - $10.50
                                 <br />
-                                <button class="order-button" onClick={addKowPad}><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Kow Pad Added to Cart."); addKowPad();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                               Kow Pad Prik - $10.50
                                 <br />
-                                <button class="order-button" onClick={addKowPadPrik}><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Kow Pad Prik Added to Cart."); addKowPadPrik();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                                 Pad Thai - $10.75
                                 <br />
-                                <button class="order-button" onClick={addPadThai}><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Pad Thai Added to Cart."); addPadThai();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 Pad See-Ew - $10.75
                                 <br />
-                                <button class="order-button" onClick={addPadSeeEw}><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Pad See-Ew Added to Cart."); addPadSeeEw();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                                 Pad Prik - $10.15
                                 <br />
-                                <button class="order-button" onClick={addPadPrik}><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Pad Prik Added to Cart."); addPadPrik();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 Pad Pak - $10.15
                                 <br />
-                                <button class="order-button" onClick={addPadPak}><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Pad Pak Added to Cart."); addPadPak();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                                 Pad Normai - $10.15
                                 <br />
-                                <button class="order-button" onClick={addPadNormai}><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Pad Normai Added to Cart."); addPadNormai();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 Pad Cashew Nut - $10.15
                                 <br />
-                                <button class="order-button" onClick={addPadCashew}><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Pad Cashew Nut Added to Cart."); addPadCashew();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>
                           </div> 
 
@@ -673,33 +990,39 @@ function Order() {
                               <div class="dish-order">
                                 Palace's Special Pho - $11.00
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Palace's Special Pho Added to Cart."); addSpecialPho();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                               Seafood Pho - $13.00
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Seafood Pho Added to Cart."); addSeafoodPho();}}><span>Add to Order</span> 
+                                </button>                              
+                                </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                                 Regular Pho - $10.00
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Regular Pho Added to Cart."); addRegularPho();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                 House Special Soup (With Noodles) - $11.00
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("House Special Soup (With Noodles) Added to Cart."); addHouseSpecialSoupWithNoodles();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                               House Special Soup (No Noodles) - $10.00
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("House Special Soup (No Noodles) Added to Cart."); addHouseSpecialSoupNoNoodles();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>                            
                           </div> 
@@ -719,40 +1042,46 @@ function Order() {
                               <div class="dish-order">
                                 Papaya Salad (Thai Style) - $8.99
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Papaya Salad (Thai Style) Added to Cart."); addPapayaSalad();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                               Cucumber Papaya Salad - $8.99
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Cucumber Papaya Salad Added to Cart."); addCucumberPapayaSalad();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                                 Seafood Papaya Salad - $10.99
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Seafood Papaya Salad Added to Cart."); addSeafoodPapayaSalad();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                                Beef Laab - $14.99
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Beef Laab Added to Cart."); addBeefLaab();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>
                             <div class="order-item-left">
                               <div class="dish-order">
                               Beef Raw Laab - $14.99
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Beef Raw Laab Added to Cart."); addBeefRawLaab();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div> 
                             <div class="order-item-right">
                               <div class="dish-order">
                                Seafood Laab - $15.99
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Seafood Laab Added to Cart."); addSeafoodLaab();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>                           
                           </div> 
 
@@ -772,14 +1101,16 @@ function Order() {
                               <div class="dish-order">
                                Sesame Chicken - $10.15
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Sesame Chicken Added to Cart."); addSesameChicken();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                              Pad Bok Choy - $10.15
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Pad Bok Choy Added to Cart."); addPadBokChoy();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>                                               
                           </div> 
 
@@ -797,29 +1128,33 @@ function Order() {
                               <div class="dish-order">
                                White Rice - $5.00
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("White Rice Added to Cart."); addWhiteRice();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
-                             Sticky Rice - $10.15
+                             Sticky Rice - $5.00
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Sticky Rice Added to Cart."); addStickyRice();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>   
                             <div class="order-item-left">
                               <div class="dish-order">
                                Sausage Served With Sticky Rice - $8.00<br/>w/o rice $5.00
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                                <br />
+                                <button class="order-button" onClick={() => {window.confirm("Sausage Served with Sticky Rice Added to Cart."); addSausage();}}><span>Add to Order</span> </button>                                
+                                <br />
                               </div>
                             </div>
                             <div class="order-item-right">
                               <div class="dish-order">
                              Pork Belly Served With Sticky Rice - $10.00<br/>w/o rice $7.00
                                 <br />
-                                <button class="order-button"><span>Add to Order</span> </button>                              </div>
+                                <button class="order-button" onClick={() => {window.confirm("Pork Belly Served With Sticky Rice Added to Cart."); addPorkBelly();}}><span>Add to Order</span> </button>                              
+                                </div>
                             </div>                                                     
-                          </div> 
+                          </div>
 
 
                         </div>
