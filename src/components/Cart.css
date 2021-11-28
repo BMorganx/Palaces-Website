@@ -216,3 +216,7 @@ Content
 th {
   font-family: Rock Salt;
 }
+
+.checkout-button:hover {
+  background-color: green;
+}

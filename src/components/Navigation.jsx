@@ -60,7 +60,16 @@ function Navigation(props) {
                 }`}
               >
                 <Link class="nav-link" to="/cart">
-                  Cart
+                  Cart&nbsp;&nbsp;
+                </Link>
+              </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/checkout" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/checkout">
+                  Checkout
                 </Link>
               </li>
             </ul>

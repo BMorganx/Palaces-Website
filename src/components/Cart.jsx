@@ -3,6 +3,7 @@ import "./Navigation.css";
 import "./Cart.css";
 import {useState, useEffect} from "react";
 import Axios from "axios";
+import { Link, withRouter } from "react-router-dom";
 
 function Cart() {
 
@@ -30,6 +31,10 @@ function Cart() {
         );
       });
     };
+
+    const getTotal = async () => {
+
+    }
 
   return (
     <html lang="en">
@@ -143,9 +148,10 @@ function Cart() {
                       })}
                     </table>
 
-                    <div class="checkout-button-outer">
-                      <div class="checkout-button">Checkout</div>
-                    </div>
+                    {/*<div class="checkout-button-outer">*/}
+                      <button /*class="checkout-button"*/ onClick= {() => {window.location='Checkout';}}>Order</button>
+                    {/*</div>*/}
+
               </div>
             </div>
           </div>

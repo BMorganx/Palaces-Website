@@ -1,0 +1,799 @@
+[{
+  "_id": {
+    "$oid": "61931a221ab033e9d2851698"
+  },
+  "menu_item_id": 1,
+  "menu_item_name": "Cream Cheese Wontons",
+  "item_description": "NULL",
+  "price": 4.95,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Appetizers",
+  "cater_name": "NULL",
+  "size_small": {
+    "$numberDouble": "NaN"
+  },
+  "size_large": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d2851699"
+  },
+  "menu_item_id": 2,
+  "menu_item_name": "Chicken Wings",
+  "item_description": "NULL",
+  "price": 8,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/Chicken Wings.png",
+  "category": "Appetizers",
+  "cater_name": "Chicken Wings",
+  "size_small": 60,
+  "size_large": 120
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d285169a"
+  },
+  "menu_item_id": 3,
+  "menu_item_name": "Pad Pak Curry",
+  "item_description": "Combination of bell peppers, white onion, bamboo shoots, broccoli, carrots, and fresh mushrooms in zesty red curry sauce.",
+  "price": 11.5,
+  "combination": 13.5,
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/Pad Pak Curry.png",
+  "category": "Thai Curry Dishes",
+  "cater_name": "Pad Pak Curry",
+  "size_small": 55,
+  "size_large": 100
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d285169b"
+  },
+  "menu_item_id": 4,
+  "menu_item_name": "Pad Ped",
+  "item_description": "Stir-fry white onion, fresh mushrooms, and bell pepper in zest red curry sauce.",
+  "price": 11.5,
+  "combination": 13.5,
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Thai Curry Dishes",
+  "cater_name": "Pad Ped",
+  "size_small": 55,
+  "size_large": 100
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d285169c"
+  },
+  "menu_item_id": 5,
+  "menu_item_name": "Seafood Combination",
+  "item_description": "Jumbo shrimp, crab meat & mussels, stir-fry with broccoli, water chestnut, and mushroom in special Thai brown sauce.",
+  "price": 14,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Thai Seafood Dishes",
+  "cater_name": "Seafood Combination",
+  "size_small": 70,
+  "size_large": 160
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d285169d"
+  },
+  "menu_item_id": 6,
+  "menu_item_name": "King Mussel",
+  "item_description": "Green mussels stir-fry with bell peppers, white onion, and sliced ginger in brown sauce.",
+  "price": 13.95,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/King Mussel.png",
+  "category": "Thai Seafood Dishes",
+  "cater_name": "King Mussel",
+  "size_small": 70,
+  "size_large": 160
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d285169e"
+  },
+  "menu_item_id": 7,
+  "menu_item_name": "Royal Ginger Jumbo Shrimp",
+  "item_description": "Jumbo shrimp stir-fry with bell pepper and white onion in brown sauce.",
+  "price": 13.95,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Thai Seafood Dishes",
+  "cater_name": "Royal Ginger Jumbo Shrimp",
+  "size_small": 70,
+  "size_large": 160
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d285169f"
+  },
+  "menu_item_id": 8,
+  "menu_item_name": "Crispy Jumbo Shrimp",
+  "item_description": "Jumbo shrimp battered and deep fried, tossed with onions and coriander.",
+  "price": 13.95,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/Crispy Jumbo Shrimp.png",
+  "category": "Thai Seafood Dishes",
+  "cater_name": "Crispy Jumbo Shrimp",
+  "size_small": 70,
+  "size_large": 160
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516a0"
+  },
+  "menu_item_id": 9,
+  "menu_item_name": "Princess Jumbo Shrimp",
+  "item_description": "Jumbo shrimp stir-fry with green peppers, water chestnut, green onion, bamboo shoots, carrots, and brown sauce.",
+  "price": 13.95,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Thai Seafood Dishes",
+  "cater_name": "Princess Jumbo Shrimp",
+  "size_small": 70,
+  "size_large": 160
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516a1"
+  },
+  "menu_item_id": 10,
+  "menu_item_name": "Kow Pad",
+  "item_description": "Fried rice with peas and carrots, green onions, and egg, topped with sunny side up egg. Served with special spicy sauce.",
+  "price": 10.5,
+  "combination": 12.5,
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/Kow Pad.png",
+  "category": "Traditional Thai Cuisine",
+  "cater_name": "Kow Pad",
+  "size_small": 55,
+  "size_large": 100
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516a2"
+  },
+  "menu_item_id": 11,
+  "menu_item_name": "Kow Pad Prik",
+  "item_description": "Fried rice with broccoli, peas and carrots, green onions, and egg, topped with sunny side up egg. Served with special spicy sauce.",
+  "price": 10.5,
+  "combination": 12.5,
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Traditional Thai Cuisine",
+  "cater_name": "Pad Prik",
+  "size_small": 55,
+  "size_large": 100
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516a3"
+  },
+  "menu_item_id": 12,
+  "menu_item_name": "Pad Thai",
+  "item_description": "Fresh rice noodles stir-fried with bean sprouts, green onion, and egg. Topped with crushed peanuts and sliced cucumber.",
+  "price": 10.75,
+  "combination": 12.75,
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/Pad Thai.png",
+  "category": "Traditional Thai Cuisine",
+  "cater_name": "Pad Thai",
+  "size_small": 58,
+  "size_large": 100
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516a4"
+  },
+  "menu_item_id": 13,
+  "menu_item_name": "Pad See-Ew",
+  "item_description": "Fresh rice noodles stir-fried with lettuce , green onion, bean sprouts, and egg. Served with sliced cucumber.",
+  "price": 10.75,
+  "combination": 12.75,
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/Pad See Ew.png",
+  "category": "Traditional Thai Cuisine",
+  "cater_name": "Pad See Ew",
+  "size_small": 58,
+  "size_large": 100
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516a5"
+  },
+  "menu_item_id": 14,
+  "menu_item_name": "Pad Prik",
+  "item_description": "Bell pepper, white onion, water chestnut, and fresh mushrooms.",
+  "price": 10.15,
+  "combination": 12.15,
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/Pad Prik.png",
+  "category": "Traditional Thai Cuisine",
+  "cater_name": "Pad Prik",
+  "size_small": 55,
+  "size_large": 100
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516a6"
+  },
+  "menu_item_id": 15,
+  "menu_item_name": "Pad Pak",
+  "item_description": "Stir-fry with napa, broccoli, carrots, water chestnuts, baby corn, and fresh mushrooms.",
+  "price": 10.15,
+  "combination": 12.15,
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Traditional Thai Cuisine",
+  "cater_name": "Pad Pad",
+  "size_small": 55,
+  "size_large": 100
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516a7"
+  },
+  "menu_item_id": 16,
+  "menu_item_name": "Pad Normai",
+  "item_description": "Bamboo shoots, carrots, green onions, and fresh mushrooms.",
+  "price": 10.15,
+  "combination": 12.15,
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Traditional Thai Cuisine",
+  "cater_name": "NULL",
+  "size_small": {
+    "$numberDouble": "NaN"
+  },
+  "size_large": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516a8"
+  },
+  "menu_item_id": 17,
+  "menu_item_name": "Pad Cashew Nut",
+  "item_description": "Roasted cashew nuts stir-fry with white onion, bell peppers, water chestnut, and fresh mushrooms.",
+  "price": 10.15,
+  "combination": 12.15,
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Traditional Thai Cuisine",
+  "cater_name": "Pad Cashew Nut",
+  "size_small": 55,
+  "size_large": 100
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516a9"
+  },
+  "menu_item_id": 18,
+  "menu_item_name": "Palace's Special Pho",
+  "item_description": "Pho noodles, shrimp, fried pork, meatballs, and thinly sliced beef.",
+  "price": 11,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": 13,
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "PHO & Soup",
+  "cater_name": "NULL",
+  "size_small": {
+    "$numberDouble": "NaN"
+  },
+  "size_large": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516aa"
+  },
+  "menu_item_id": 19,
+  "menu_item_name": "Seafood Pho",
+  "item_description": "Pho noodles, shrimp, crab meat, and fish meatballs.",
+  "price": 13,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": 15,
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "PHO & Soup",
+  "cater_name": "NULL",
+  "size_small": {
+    "$numberDouble": "NaN"
+  },
+  "size_large": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516ab"
+  },
+  "menu_item_id": 20,
+  "menu_item_name": "Regular Pho",
+  "item_description": "Pho noodles, beef meatballs, and thinly sliced beef.",
+  "price": 10,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": 12,
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "PHO & Soup",
+  "cater_name": "NULL",
+  "size_small": {
+    "$numberDouble": "NaN"
+  },
+  "size_large": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516ac"
+  },
+  "menu_item_id": 21,
+  "menu_item_name": "House Special Soup (NO NOODLES)",
+  "item_description": "Tripe, thinly sliced beef, coriander, and herbs in thin beef broth.",
+  "price": 10,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "PHO & Soup",
+  "cater_name": "NULL",
+  "size_small": {
+    "$numberDouble": "NaN"
+  },
+  "size_large": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516ad"
+  },
+  "menu_item_id": 22,
+  "menu_item_name": "House Special Soup (WITH NOODLES)",
+  "item_description": "Tripe, thinly sliced beef, coriander, and herbs in thin beef broth with pho noodles.",
+  "price": 11,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": 13,
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "PHO & Soup",
+  "cater_name": "NULL",
+  "size_small": {
+    "$numberDouble": "NaN"
+  },
+  "size_large": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516ae"
+  },
+  "menu_item_id": 23,
+  "menu_item_name": "Papaya Salad (Thai Style)",
+  "item_description": "Shredded papaya with tomatoes, lime, ma kok, tamarind juice, fish sauce, crab sauce, and peanuts. (Choice of spice level)",
+  "price": 8.99,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/Papaya Salad.png",
+  "category": "Salad",
+  "cater_name": "Papaya Salad",
+  "size_small": 55,
+  "size_large": 90
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516af"
+  },
+  "menu_item_id": 24,
+  "menu_item_name": "Cucumber Papaya Salad",
+  "item_description": "Shredded cucumber with tomatoes, lime, ma kok, tamarind juice, fish sauce, crab sauce, and peanuts. (Choice of spice level)",
+  "price": 8.99,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Salad",
+  "cater_name": "NULL",
+  "size_small": {
+    "$numberDouble": "NaN"
+  },
+  "size_large": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516b0"
+  },
+  "menu_item_id": 25,
+  "menu_item_name": "Seafood Papaya Salad",
+  "item_description": "Shredded papaya with shrimp, tomatoes, lime, ma kok, tamarind juice, fish sauce, crab sauce, and peanuts. (Choice of spice level)",
+  "price": 10.99,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Salad",
+  "cater_name": "NULL",
+  "size_small": {
+    "$numberDouble": "NaN"
+  },
+  "size_large": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516b1"
+  },
+  "menu_item_id": 26,
+  "menu_item_name": "Beef Laab",
+  "item_description": "Ground beef tossed with oriental spices and herbs. (Choice of spice level and bitter level)",
+  "price": 14.99,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/Lab.png",
+  "category": "Salad",
+  "cater_name": "Laab(cooked)",
+  "size_small": 78,
+  "size_large": 155
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516b2"
+  },
+  "menu_item_id": 27,
+  "menu_item_name": "Beef Raw Laab",
+  "item_description": "Ground raw beef tossed with oriental spices and herbs. (Choice of spice level and bitter level)",
+  "price": 14.99,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Salad",
+  "cater_name": "Laab(raw)",
+  "size_small": 78,
+  "size_large": 155
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516b3"
+  },
+  "menu_item_id": 28,
+  "menu_item_name": "Seafood Laab",
+  "item_description": "Shrimp and imitation crab tossed with herbs, green onions, cilantro, shredded carrots, and oriental spices. (Choice of spice level)",
+  "price": 15.99,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Salad",
+  "cater_name": "Seafood Laab",
+  "size_small": 80,
+  "size_large": 160
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516b4"
+  },
+  "menu_item_id": 29,
+  "menu_item_name": "Sesame Chicken",
+  "item_description": "Breaded Chicken, sesame seeds, steamed broccoli, and special sauce.",
+  "price": 10.15,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/Sesame Chicken.png",
+  "category": "Other Entrees",
+  "cater_name": "NULL",
+  "size_small": {
+    "$numberDouble": "NaN"
+  },
+  "size_large": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516b5"
+  },
+  "menu_item_id": 30,
+  "menu_item_name": "Pad Bok Choy",
+  "item_description": "Bok Choy stir-fry with green onion and choice of meat.",
+  "price": 10.15,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/Pad Bok Choy.png",
+  "category": "Other Entrees",
+  "cater_name": "Pad Bok Choy",
+  "size_small": 55,
+  "size_large": 100
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516b6"
+  },
+  "menu_item_id": 31,
+  "menu_item_name": "White Rice",
+  "item_description": "NULL",
+  "price": 5,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "NULL",
+  "category": "Rice & Combinations",
+  "cater_name": "White Rice",
+  "size_small": 38,
+  "size_large": 50
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516b7"
+  },
+  "menu_item_id": 32,
+  "menu_item_name": "Sticky Rice",
+  "item_description": "NULL",
+  "price": 5,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "NULL",
+  "addition_price": {
+    "$numberDouble": "NaN"
+  },
+  "image_name": "pics/Sticky Rice.png",
+  "category": "Rice & Combinations",
+  "cater_name": "Sticky Rice",
+  "size_small": 50,
+  "size_large": 80
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516b8"
+  },
+  "menu_item_id": 33,
+  "menu_item_name": "Sausage Served With Sticky Rice",
+  "item_description": "NULL",
+  "price": 8,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "One Sausage",
+  "addition_price": 5,
+  "image_name": "NULL",
+  "category": "Rice & Combinations",
+  "cater_name": "NULL",
+  "size_small": {
+    "$numberDouble": "NaN"
+  },
+  "size_large": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "61931a221ab033e9d28516b9"
+  },
+  "menu_item_id": 34,
+  "menu_item_name": "Pork belly Served With Sticky Rice",
+  "item_description": "NULL",
+  "price": 10,
+  "combination": {
+    "$numberDouble": "NaN"
+  },
+  "xl": {
+    "$numberDouble": "NaN"
+  },
+  "addition": "Pork Belly",
+  "addition_price": 7,
+  "image_name": "NULL",
+  "category": "Rice & Combinations",
+  "cater_name": "NULL",
+  "size_small": {
+    "$numberDouble": "NaN"
+  },
+  "size_large": {
+    "$numberDouble": "NaN"
+  }
+}]

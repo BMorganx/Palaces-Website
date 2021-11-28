@@ -3,7 +3,7 @@ import { useState } from "react";
 import Axios from "axios";
 import "./Navigation.css";
 import "./Order.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+//import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
