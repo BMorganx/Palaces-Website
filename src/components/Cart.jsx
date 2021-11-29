@@ -12,6 +12,7 @@ function Cart() {
     const [quantity, setQuantity] = useState(0);
     const [cart_id, setCartId] = useState(0);*/
     const [menuList, setMenuList] = useState([]);
+    
 
     useEffect(() => {
       getDish();
@@ -32,9 +33,11 @@ function Cart() {
       });
     };
 
-    const getTotal = async () => {
+    
 
-    }
+    /*const getTotal = async () => {
+
+    }*/
 
   return (
     <html lang="en">
@@ -135,6 +138,9 @@ function Cart() {
                           </tr>
                     {menuList.map((val, key) => {
 
+                      /*var valtotal = menuList.reduce((total, val)=>total+(val.price*val.quantity),0).toFixed(2);*/
+
+
                       return (
                         
                           <tr>
@@ -143,15 +149,25 @@ function Cart() {
                             <th>${val.price.toFixed(2)}</th>
                             <th><input type="number" id="quantity" min="1" defaultValue={val.quantity}></input></th>
                           </tr>
-                        
+                          
+                          
                       );
                       })}
+
                     </table>
-
-                    {/*<div class="checkout-button-outer">*/}
-                      <button /*class="checkout-button"*/ onClick= {() => {window.location='Checkout';}}>Order</button>
-                    {/*</div>*/}
-
+                    <table class="cart-total">
+                      <tr>
+                        <th><div class="cart-total">Total: ${menuList.reduce((total, val)=>total+(val.price*val.quantity),0).toFixed(2)}</div></th>
+                      </tr>
+                      <tr>
+                        <th>{/*<div class="checkout-button-outer">*/}
+                          <button class="checkout"/*class="checkout-button"*/ onClick= {() => {window.location='Checkout';}}>Checkout</button>
+                          {/*</div>*/}</th>
+                      </tr>
+                      {/*<script>
+                    var valtotal = menuList.reduce((total, val)=>total+(val.price*val.quantity),0).toFixed(2);
+                      </script>*/}
+                    </table>
               </div>
             </div>
           </div>
