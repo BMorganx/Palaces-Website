@@ -7,16 +7,6 @@ create table admin (
     Primary Key (admin_id)
 );
 
-/*create table cater_menu_item (
-    cater_menu_item_id Int unsigned not null auto_increment,
-    menu_item_id Int unsigned not null,
-    name Char(50) not null,
-    size_small Int(4) not null,
-    size_large Int(4) not null,
-    Primary Key (cater_menu_item_id)
-    Foreign Key (menu_item_id) References menu_item(menu_item_id)
-);*/
-
 create table customer (
     customer_id Int unsigned not null auto_increment,
     first_name Char(50) not null,
@@ -70,65 +60,6 @@ create table cart (
     amount Int,
     Primary Key (cart_id)
 );
-
-/*create table order_cater_items (
-    order_id Int unsigned not null,
-    cater_menu_item_id Int unsigned not null,
-    quantity Int not null,
-    price Float not null,
-    Primary Key (order_id, cater_menu_item_id),
-    Foreign Key (order_id) References orders(order_id),
-    Foreign Key (cater_menu_item_id) References cater_menu_item(cater_menu_item_id)
-);*/
-
-/*insert into cater_menu_item values
-    (1, 'Laab(raw or cooked)', 78, 155),
-    (2, 'Seafood Laab', 80, 160),
-    (3, 'Papaya Salad', 55, 90),
-    (4, 'Chicken Wings', 60, 120),
-    (5, 'Deep Fried Sausage', 55, 110),
-    (6, 'Kow Pad', 55, 100),
-    (7, 'Pad Thai', 58, 100),
-    (8, 'Pad See Ew', 58, 100),
-    (9, 'Pad Prik', 55, 100),
-    (10, 'Pad Pak', 55, 100),
-    (11, 'Pad Cashew Nut', 55, 100),
-    (12, 'Pad Pak Curry', 55, 100),
-    (13, 'Pad Ped', 55, 100),
-    (14, 'Seafood Combination', 70, 160),
-    (15, 'Crispy Jumbo Shrimp', 70, 160),
-    (16, 'Royal Jumbo Shrimp', 70, 160),
-    (17, 'Princess Jumbo Shrimp', 70, 160),
-    (18, 'King Mussel', 70, 160),
-    (19, 'Pad Boky Choy', 55, 100),
-    (20, 'Sesame Chicken', 65, 110),
-    (21, 'White Rice', 38, 50),
-    (22, 'Sticky Rice', 50, 80);*/
-
-/*insert into cater_menu_item values
-    (26, 'Laab(raw)', 78, 155),
-    (27, 'Laab(cooked)', 78, 155),
-    (28, 'Seafood Laab', 80, 160),
-    (23, 'Papaya Salad', 55, 90),
-    (2, 'Chicken Wings', 60, 120),
-    (33, 'Deep Fried Sausage', 55, 110),
-    (10, 'Kow Pad', 55, 100),
-    (12, 'Pad Thai', 58, 100),
-    (13, 'Pad See Ew', 58, 100),
-    (14, 'Pad Prik', 55, 100),
-    (15, 'Pad Pak', 55, 100),
-    (17, 'Pad Cashew Nut', 55, 100),
-    (3, 'Pad Pak Curry', 55, 100),
-    (4, 'Pad Ped', 55, 100),
-    (5, 'Seafood Combination', 70, 160),
-    (8, 'Crispy Jumbo Shrimp', 70, 160),
-    (7, 'Royal Jumbo Shrimp', 70, 160),
-    (9, 'Princess Jumbo Shrimp', 70, 160),
-    (6, 'King Mussel', 70, 160),
-    (30, 'Pad Bok Choy', 55, 100),
-    (29, 'Sesame Chicken', 65, 110),
-    (31, 'White Rice', 38, 50),
-    (32, 'Sticky Rice', 50, 80);*/
 
 insert into menu_item values
     (1, 'Cream Cheese Wontons', null, 4.95, null, null, null, null, null, 'Appetizers', null, null, null),

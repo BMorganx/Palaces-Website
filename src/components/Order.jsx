@@ -606,13 +606,6 @@ function Order() {
     });
   };
 
-
-  /*onChangeHandler(event) {
-    this.props.eventHandler(event);
-  }
-  
-  var dish = this.props.menu_item;*/
-
   return (
     
     <html lang="en">

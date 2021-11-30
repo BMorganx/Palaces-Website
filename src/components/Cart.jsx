@@ -7,10 +7,6 @@ import { Link, withRouter } from "react-router-dom";
 
 function Cart() {
 
-  /*const [menuName, setMenuName] = useState("");
-    const [price, setPrice] = useState(0);
-    const [quantity, setQuantity] = useState(0);
-    const [cart_id, setCartId] = useState(0);*/
     const [menuList, setMenuList] = useState([]);
 
     useEffect(() => {
@@ -32,10 +28,13 @@ function Cart() {
       });
     };
 
+<<<<<<< Updated upstream
     const getTotal = async () => {
 
     }
 
+=======
+>>>>>>> Stashed changes
   return (
     <html lang="en">
       <head>
@@ -84,48 +83,6 @@ function Cart() {
                       </div>
                     </div>
                 
-
-                {/*<div class="cart-body-Outer">
-                  <div id="cart-body" data-name="cart-body" class="cart-body">
-                    <div class="parent-container">
-                      <div class="cart-left-child">
-                        <span class="cart-span-menu-items">
-                          <div class="remove-title">Remove</div>
-                          <div class="text-in-span">xbutton xbutton xbutton xbutton</div>
-                        </span>
-                      </div>
-
-                      <div class="cart-middle-left-child">
-                        <span class="cart-span-menu-items">
-                          <div class="remove-title">Item</div>
-                          <div class="text-in-span">Seafood Papaya Salad<br/>Wings<br/>Rice<br/>Papaya</div>
-                        </span>
-                      </div>
-
-                      <div class="cart-middle-right-child">
-                        <span class="cart-span-menu-items">
-                          <div class="remove-title">Price</div>
-                          <div class="text-in-span">$1.50 $2.50 $3.50 $4.50</div>
-                        </span>
-                      </div>
-
-                      <div class="cart-right-child">
-                        <span class="cart-span-menu-items">
-                          <div class="remove-title">Qty</div>
-                          <div class="text-in-span">box box box box</div>
-                        </span>
-                      </div>
-                    </div>
-
-                    
-                    
-                    <div class="checkout-button-outer">
-                      <div class="checkout-button">Checkout</div>
-                    </div>
-
-                        
-                  </div>
-                </div>*/}
                 <table className="table">
                           <tr>
                             <th>Remove</th>
@@ -146,6 +103,20 @@ function Cart() {
                         
                       );
                       })}
+<<<<<<< Updated upstream
+=======
+
+                    </table>
+                    <table class="cart-total">
+                      <tr>
+                        <th><div class="cart-total">Total: ${menuList.reduce((total, val)=>total+(val.price*val.quantity),0).toFixed(2)}</div></th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <button class="checkout" onClick= {() => {window.location='Checkout';}}>Checkout</button>
+                        </th>
+                      </tr>
+>>>>>>> Stashed changes
                     </table>
 
                     {/*<div class="checkout-button-outer">*/}
