@@ -28,13 +28,6 @@ function Cart() {
       });
     };
 
-<<<<<<< Updated upstream
-    const getTotal = async () => {
-
-    }
-
-=======
->>>>>>> Stashed changes
   return (
     <html lang="en">
       <head>
@@ -103,8 +96,7 @@ function Cart() {
                         
                       );
                       })}
-<<<<<<< Updated upstream
-=======
+
 
                     </table>
                     <table class="cart-total">
@@ -116,12 +108,8 @@ function Cart() {
                           <button class="checkout" onClick= {() => {window.location='Checkout';}}>Checkout</button>
                         </th>
                       </tr>
->>>>>>> Stashed changes
-                    </table>
 
-                    {/*<div class="checkout-button-outer">*/}
-                      <button /*class="checkout-button"*/ onClick= {() => {window.location='Checkout';}}>Order</button>
-                    {/*</div>*/}
+                    </table>
 
               </div>
             </div>

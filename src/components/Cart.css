@@ -216,7 +216,17 @@ Content
 th {
   font-family: Rock Salt;
 }
-
-.checkout-button:hover {
+.cart-total {
+  font-family: Rock Salt;
+  font-size: 20px;
+  float:right;
+  margin-right:240px;
+  font-weight: bold;
+}
+.checkout {
+  font-weight: bold;
+  margin-top:30px;
+}
+.checkout:hover {
   background-color: green;
 }
