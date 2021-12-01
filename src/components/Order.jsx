@@ -681,42 +681,36 @@ function Order() {
                               }
                               alt=""
                             />
-                            <h1>Papaya Salad</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Pad-Thai.png").default}
                               alt=""
                             />
-                            <h1>Pad Thai</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Pad-See-Ew.png").default}
                               alt=""
                             />
-                            <h1>Pad See-Ew</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Pad-Prik.png").default}
                               alt=""
                             />
-                            <h1>Pad-Prik</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Bok-Choy.png").default}
                               alt=""
                             />
-                            <h1>Pad Bok Choy</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Laab.png").default}
                               alt=""
                             />
-                            <h1>Beef Lab</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
@@ -725,14 +719,12 @@ function Order() {
                               }
                               alt=""
                             />
-                            <h1>Chicken Wings</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/King-Mussel.png").default}
                               alt=""
                             />
-                            <h1>King Mussel</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
@@ -742,14 +734,12 @@ function Order() {
                               }
                               alt=""
                             />
-                            <h2>Princess Jumbo Shrimp</h2>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Pad-Pak.png").default}
                               alt=""
                             />
-                            <h1>Pad Pak Curry</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
@@ -758,14 +748,12 @@ function Order() {
                               }
                               alt=""
                             />
-                            <h1>Sesame Chicken</h1>
                           </SwiperSlide>
                           <SwiperSlide>
                             <img
                               src={require("../assets/Kow-Pad.png").default}
                               alt=""
                             />
-                            <h1>Kow Pad</h1>
                           </SwiperSlide>
                         </div>
                       </Swiper>

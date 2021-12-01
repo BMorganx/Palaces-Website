@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { PayPalButton } from "react-paypal-button-v2";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation, Footer, Home, About, Catering, Menu, Order, Cart, Checkout } from "./components";
 function App() {
+  const [state, setState] = useState(0);
   return (
     <div className="App">
       <Router>
@@ -17,6 +19,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
+      
     </div>
   );
 }
