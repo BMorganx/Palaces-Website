@@ -168,6 +168,20 @@ function Cart() {
                     var valtotal = menuList.reduce((total, val)=>total+(val.price*val.quantity),0).toFixed(2);
                       </script>*/}
                     </table>
+                    <div className="Paypal">
+                      {checkout ? (
+                        <PayPal />
+                      ) : (
+                      
+
+                    <button class="checkout" onClick= {() => {
+                        setCheckOut(true);
+                        }}
+                        >
+                          Checkout
+                        </button>
+                      )}
+                    </div>
               </div>
             </div>
           </div>
