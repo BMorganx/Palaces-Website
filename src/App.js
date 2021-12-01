@@ -13,6 +13,7 @@ function App() {
           <Route path="/menu" exact component={() => <Menu />} />
           <Route path="/order" exact component={() => <Order />} />
           <Route path="/cart" exact component={() => <Cart />} />
+          <Route path="/checkout" exact component={() => <Checkout />} />
         </Switch>
         <Footer />
       </Router>
