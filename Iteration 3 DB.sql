@@ -7,16 +7,6 @@ create table admin (
     Primary Key (admin_id)
 );
 
-/*create table cater_menu_item (
-    cater_menu_item_id Int unsigned not null auto_increment,
-    menu_item_id Int unsigned not null,
-    name Char(50) not null,
-    size_small Int(4) not null,
-    size_large Int(4) not null,
-    Primary Key (cater_menu_item_id)
-    Foreign Key (menu_item_id) References menu_item(menu_item_id)
-);*/
-
 create table customer (
     customer_id Int unsigned not null auto_increment,
     first_name Char(50) not null,
@@ -71,7 +61,10 @@ create table cart (
     Primary Key (cart_id)
 );
 
-/*create table order_cater_items (
+/*
+If catering is needed
+
+create table order_cater_items (
     order_id Int unsigned not null,
     cater_menu_item_id Int unsigned not null,
     quantity Int not null,
